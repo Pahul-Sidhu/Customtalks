@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+    margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display:flex;
+    background-color: rgb(106 31 62);
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    min-width: 12vw;
+    color: white;
+    padding: 1rem;
+}
+
+#logo{
+    flex: 1;
+    font-size: 20px;
+    user-select: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(180, 72, 117);
+    cursor: pointer;
+}
+
+.icon{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    display: none;
+}
+
+.icon:hover{
+    color: rgb(180, 72, 117);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .icon{
+        display: block;
+        top: 22px;
+    }
+
+    .links{
+        width: 100%;
+        text-align: center;
+        background-color: rgb(106 31 62);
+        transition: 3s;
+    }
+    
+    nav ul{
+        flex-wrap: wrap;
+    }
+    
+    .invisible{
+        display: none;
+    }
+} 

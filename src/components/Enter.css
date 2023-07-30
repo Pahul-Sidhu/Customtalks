@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.element{
+    margin: 10px;
+    padding: 10px;
+}
+
+input{
+    border-radius: 5px;
+    min-width: 20vw;
+}
+
+button{
+    background-color: rgb(106 31 62);
+    border: 0px;
+    min-width: 6vw;
+    border-radius: 20px;
+    border: 1px solid rgb(106 31 62);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(180, 72, 117);
+    cursor: pointer;
+}
+
+textarea{
+    max-width: 35vw;
+    min-width: 20vw;
+}

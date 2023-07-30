@@ -1,0 +1,19 @@
+img{
+    width:20vw;
+    min-height: 50vh;
+    min-width: 40vw;
+    max-width: 35vw; 
+    max-height: 60vh;
+    border-radius: 50%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element{
+    margin: 10px;
+    padding: 5px;
+}

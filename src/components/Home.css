@@ -1,0 +1,196 @@
+.content{
+    display: grid;
+    grid-template-columns: 35fr 65fr;
+    height: 90vh;
+    color: white;
+    background-color: rgb(22 24 26);
+}
+
+.inv{
+    display: none;
+}
+
+.info #icon{
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
+    user-select: none;
+}
+
+.info .icon2:hover{
+    color: rgb(180, 72, 117);
+    cursor: pointer;
+}
+
+.info #icon #back{
+   display: none;
+}
+
+.info #channels{
+    margin: 5px;
+     /* overflow-y: scroll; */
+    width: 100%;
+    align-items: center;
+}
+
+.info #channels ul{
+    list-style: none;
+}
+
+.info #channels ul li{
+    width: 95%;
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.info #channels p{
+    width: 100%;
+    text-align: center;
+}
+
+.info{
+    background-color: rgb(14 11 11);
+}
+
+.details{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.details .mine{
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    margin: 8px;
+    padding: 4px;
+}
+
+.details .others{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 8px;
+    padding: 4px;
+}
+.details .nameofuser{
+    color: rgb(126, 117, 117);
+}
+.details p{
+    background-color: rgb(37, 36, 36);
+    border-radius: 10px;
+    border: 1px solid rgb(106 31 62);
+    min-width: 15vw;
+    max-width: 15vw;
+    word-wrap:break-word;
+    padding: 4px;
+    margin: 2px;
+}
+
+.details .chatbox{
+    display: flex;
+    width: 95%;
+    /* margin: 8px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 4px;
+    justify-content: right;
+}
+.details .chatbox i{
+    margin: 8px;
+    cursor: pointer;
+}
+
+.info #channels ul li .btn3{
+    margin: 2px;
+    width: 6vw;
+}
+
+.details #channellist{
+    display: none;
+}
+
+.details .channelcomp{
+    background-color: rgb(36, 34, 34);
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    width: 100%;
+    user-select: none;
+    height: 8vh;
+    align-items: center;
+}
+
+.details .channelnav{
+    position: sticky;
+    top: 0;
+}
+
+.details .channelcomp li{
+    margin: 5px;
+    padding: 5px;
+}
+
+.create{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn3{
+    min-width: 10vw;
+    max-width: 12vw;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+
+    position: absolute;
+
+    width: 100%;
+
+    overflow: auto;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+@media only screen and (max-width : 850px)  {
+    .details #channellist{
+        display: block;
+    }
+
+    .content{
+        display: block;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .info #icon #back{
+        display: block;
+    }
+
+    .info #icon{
+        margin: 0;
+    }
+
+    .details p{
+        min-width: 25vw;
+        max-width: 25vw
+    }
+}
